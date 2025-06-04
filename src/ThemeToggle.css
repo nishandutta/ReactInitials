@@ -1,0 +1,68 @@
+.theme-toggle-container {
+  max-width: 300px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--box-bg);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  animation: bounceIn 0.6s ease;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-container:hover {
+  transform: scale(1.03);
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.theme-toggle-container button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle-container button:hover {
+  background-color: var(--btn-hover);
+}
+
+/* Light Theme */
+.light-theme {
+  --box-bg: #ffffff;
+  --text-color: #263ad3;
+  --btn-bg: #007bff;
+  --btn-hover: #0056b3;
+  --btn-text: #fff;
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --box-bg: #1e1e2f;
+  --text-color: #aa1717;
+  --btn-bg: #4a00e0;
+  --btn-hover: #3700b3;
+  --btn-text: #d2c531;
+  background-color: #121212;
+  color: #fff;
+}

@@ -1,0 +1,41 @@
+.countdown-container {
+  max-width: 300px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #d4dc59, #8bc70a);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  animation: bounceIn 0.8s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.timer {
+  font-size: 3rem;
+  color: #4a4ce7;
+  font-weight: bold;
+}
+
+.end-message {
+  font-size: 2rem;
+  color: #003049;
+  font-weight: bold;
+}
+
+/* Bounce on load */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
